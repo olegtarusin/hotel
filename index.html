@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>The Breakdance</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="google" content="notranslate">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240428211554" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap&_v=20240428211554" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240428211554">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" href="favicon.svg">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="manifest" href="manifest.json">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			overflow: hidden;
+
+		}
+
+		body.loaded {
+			overflow: auto;
+		}
+
+		.loader {
+			font-family: "Inter";
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			left: 0px;
+			top: 0px;
+			z-index: 200;
+			background-color: #292929;
+			opacity: 1;
+			visibility: visible;
+
+
+
+		}
+
+		.loaded .loader {
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.5s linear 0s;
+		}
+
+		.loader__container {
+			display: flex;
+			height: 100%;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.loader__box {
+			color: #fff;
+			font-size: 2em;
+			text-align: center;
+			font-weight: 500;
+			display: flex;
+			flex-direction: column;
+			row-gap: 1em;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="loader">
+		<div class="loader__container">
+			<div class="loader__box">
+				<div class="loader__text">
+					The Breakdance
+				</div>
+				<div class="loader__percent" id="loader">0%</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<div class="menu__logo">
+						<img src="img/logo.svg" alt="logo">
+					</div>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Services</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">About us</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Room</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+						</ul>
+						<div class="menu__actions" data-da=".menu,768">
+							<a href="#" class="menu__button"><span>Book Now</span></a>
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+						</div>
+					</nav>
+
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="titlepage">
+				<div class="titlepage__body">
+					<div class="titlepage__container">
+						<h1 class="titlepage__main-title">Open the door for a
+							spacious living -</h1>
+						<ul class="titlepage__links-list">
+							<li class="titlepage__list-item"><a href="#" class="titlepage__link">Book a hotel service <span class="icon-arrow-right"></span></a></li>
+							<li class="titlepage__list-item"><a href="#" class="titlepage__link">Book a hotel service <span class="icon-arrow-right"></span></a></li>
+							<li class="titlepage__list-item"><a href="#" class="titlepage__link">Book a hotel service <span class="icon-arrow-right"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="titlepage__image">
+					<picture><source srcset="img/title-image.webp" type="image/webp"><img src="img/title-image.jpg" alt="picture"></picture>
+				</div>
+			</div>
+			<div class="service">
+				<div class="service__container">
+					<dl class="service__card">
+						<dt class="service__image">
+							<img src="img/service/cup.svg" alt="vector">
+						</dt>
+						<dd class="service__text">Welcome Drinks</dd>
+					</dl>
+					<dl class="service__card">
+						<dt class="service__image">
+							<img src="img/service/car.svg" alt="vector">
+						</dt>
+						<dd class="service__text">Car
+							Rental</dd>
+					</dl>
+					<dl class="service__card">
+						<dt class="service__image">
+							<img src="img/service/bank.svg" alt="vector">
+						</dt>
+						<dd class="service__text">Resort & Spa</dd>
+					</dl>
+					<dl class="service__card">
+						<dt class="service__image">
+							<img src="img/service/wifi.svg" alt="vector">
+						</dt>
+						<dd class="service__text">Free
+							WIFI</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="advantage">
+				<div class="advantage__container">
+					<section class="advantage__titlebox titlebox">
+						<h2 class="titlebox__title">
+							Why You Should <span>Stay Here</span>
+						</h2>
+						<p class="titlebox__text">
+							Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+							amet sint. Velit officia consequat.
+						</p>
+					</section>
+				</div>
+				<div class="advantage__body">
+					<div class="advantage__list-box number-list">
+						<div class="number-list__container">
+							<ol class="number-list__list">
+								<li class="number-list__item">
+									<h3 class="number-list__title">Provide the best choice of Room. </h3>
+									<p class="number-list__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+										amet sint. Velit officia consequat.</p>
+								</li>
+								<li class="number-list__item">
+									<h3 class="number-list__title">Low price with Best Quality</h3>
+									<p class="number-list__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+										amet sint. Velit officia consequat.</p>
+								</li>
+								<li class="number-list__item">
+									<h3 class="number-list__title">Restaurant Service</h3>
+									<p class="number-list__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+										amet sint. Velit officia consequat.</p>
+								</li>
+							</ol>
+						</div>
+					</div>
+					<div class="advantage__picture-box picture-box">
+						<div class="picture-box__body">
+							<div class="picture-box__container">
+								<div class="picture-box__content">
+									<div class="picture-box__coment coment coment--top">
+										<div class="coment__image">
+											<picture><source srcset="img/coment/person01.webp" type="image/webp"><img src="img/coment/person01.jpg" alt="person"></picture>
+										</div>
+										<div class="coment__info">
+											<div class="coment__person">
+												Cody Fisher
+											</div>
+											<div class="coment__text">give rating <span class="coment__rating">4.5</span></div>
+										</div>
+									</div>
+									<div class="picture-box__coment coment">
+										<div class="coment__image">
+											<picture><source srcset="img/coment/person02.webp" type="image/webp"><img src="img/coment/person02.jpg" alt="person"></picture>
+										</div>
+										<div class="coment__info">
+											<div class="coment__person">
+												Albert Flores
+											</div>
+											<div class="coment__text">give rating <span class="coment__rating">4.5</span></div>
+										</div>
+									</div>
+									<div class="picture-box__coment coment coment--bottom">
+										<div class="coment__image">
+											<picture><source srcset="img/coment/person03.webp" type="image/webp"><img src="img/coment/person03.jpg" alt="person"></picture>
+										</div>
+										<div class="coment__info">
+											<div class="coment__person">
+												Devon Lane
+											</div>
+											<div class="coment__text">give rating <span class="coment__rating">4.5</span></div>
+										</div>
+									</div>
+									<div class="picture-box__small-image">
+										<picture><source srcset="img/advantage/advantage-image.webp" type="image/webp"><img src="img/advantage/advantage-image.jpg" alt="image"></picture>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="picture-box__image">
+							<picture><source srcset="img/advantage/advantage-bg.webp" type="image/webp"><img src="img/advantage/advantage-bg.jpg" alt="bg"></picture>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="galery">
+				<div class="galery__container">
+					<section class="galery__titlebox titlebox">
+						<h2 class="titlebox__subtitle">Our Room</h2>
+						<h2 class="titlebox__title">
+							A World of <span>Choice</span>
+						</h2>
+						<p class="titlebox__text">
+							Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+							amet sint. Velit officia consequat.
+						</p>
+					</section>
+					<div class="galery__body">
+						<a href="#" class="galery__card">
+							<div class="galery__image">
+								<picture><source srcset="img/galery/gal01.webp" type="image/webp"><img src="img/galery/gal01.jpg" alt="appartment"></picture>
+							</div>
+							<div class="galery__card-info">
+								<div class="galery__room-size">3 GUESTS</div>
+								<div class="galery__room-name">Room with View</div>
+							</div>
+						</a>
+						<a href="#" class="galery__card card--mid">
+							<div class="galery__image">
+								<picture><source srcset="img/galery/gal02.webp" type="image/webp"><img src="img/galery/gal02.jpg" alt="appartment"></picture>
+							</div>
+							<div class="galery__card-info">
+								<div class="galery__room-size">6 GUESTS</div>
+								<div class="galery__room-name">Luxury Room</div>
+							</div>
+						</a>
+						<a href="#" class="galery__card">
+							<div class="galery__image">
+								<picture><source srcset="img/galery/gal03.webp" type="image/webp"><img src="img/galery/gal03.jpg" alt="appartment"></picture>
+							</div>
+							<div class="galery__card-info">
+								<div class="galery__room-size">5 GUESTS</div>
+								<div class="galery__room-name">Appartment</div>
+							</div>
+						</a>
+						<a href="#" class="galery__card">
+							<div class="galery__image">
+								<picture><source srcset="img/galery/gal04.webp" type="image/webp"><img src="img/galery/gal04.jpg" alt="appartment"></picture>
+							</div>
+							<div class="galery__card-info">
+								<div class="galery__room-size">1 GUESTS</div>
+								<div class="galery__room-name">Small Room</div>
+							</div>
+						</a>
+						<a href="#" class="galery__card">
+							<div class="galery__image">
+								<picture><source srcset="img/galery/gal05.webp" type="image/webp"><img src="img/galery/gal05.jpg" alt="appartment"></picture>
+							</div>
+							<div class="galery__card-info">
+								<div class="galery__room-size">4 GUESTS</div>
+								<div class="galery__room-name">Midium Room</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="about">
+				<div class="about__body">
+					<div class="about__content">
+						<div class="about__container">
+							<article class="about__artice">
+								<h2 class="about__title">ABOUT US</h2>
+								<div class="about__textbox">
+									<p class="about__text">Amet minim mollit non deserunt ullamco est
+										sit aliqua dolor do amet sint. Velit officia
+										consequatduis enim.</p>
+									<p class="about__text">Amet minim mollit non deserunt ullamco est
+										sit aliqua dolor do</p>
+								</div>
+								<a href="#" class="about__button"><span>Explore</span></a>
+							</article>
+						</div>
+					</div>
+					<div class="about__image">
+						<picture><source srcset="img/about/about-bg.webp" type="image/webp"><img src="img/about/about-bg.jpg" alt="about-bg"></picture>
+					</div>
+				</div>
+
+			</div>
+			<div class="hotel-info">
+				<div class="hotel-info__container">
+					<div class="hotel-info__bord">
+						<a href="#" class="hotel-info__card info-card">
+							<div class="info-card__image">
+								<img src="img/about/cup.svg" alt="picture">
+							</div>
+							<article class="info-card__article">
+								<h3 class="info-card__title">RESTAURANT</h3>
+								<p class="info-card__text">Amet minim mollit non deserunt ullamco est
+									sit aliqua dolor do</p>
+							</article>
+						</a>
+						<a href="#" class="hotel-info__card info-card">
+							<div class="info-card__image">
+								<img src="img/about/spa.svg" alt="picture">
+							</div>
+							<article class="info-card__article">
+								<h3 class="info-card__title">SPA & WELLNESS</h3>
+								<p class="info-card__text">Amet minim mollit non deserunt ullamco est
+									sit aliqua dolor do</p>
+							</article>
+						</a>
+						<a href="#" class="hotel-info__card info-card">
+							<div class="info-card__image">
+								<img src="img/about/leaf.svg" alt="picture">
+							</div>
+							<article class="info-card__article">
+								<h3 class="info-card__title">THE BEST ROOMS</h3>
+								<p class="info-card__text">Amet minim mollit non deserunt ullamco est
+									sit aliqua dolor do</p>
+							</article>
+						</a>
+						<a href="#" class="hotel-info__card info-card">
+							<div class="info-card__image">
+								<img src="img/about/bar.svg" alt="picture">
+							</div>
+							<article class="info-card__article">
+								<h3 class="info-card__title">LOUNGE BAR</h3>
+								<p class="info-card__text">Amet minim mollit non deserunt ullamco est
+									sit aliqua dolor do</p>
+							</article>
+						</a>
+					</div>
+					<article class="hotel-info__article">
+						<h3 class="hotel-info__title">CLASSIC ROOMS AND
+							INTERIOR</h3>
+						<dl class="hotel-info__rating-box">
+							<dt class="hotel-info__rating">
+								<img src="img/about/rating.svg" alt="rating">
+							</dt>
+							<dd class="hotel-info__text">Excellent 5000+reviews</dd>
+						</dl>
+						<dl class="hotel-info__person-box">
+							<dt class="hotel-info__comand">
+								<ul class="hotel-info__list">
+									<li class="hotel-info__image"><picture><source srcset="img/about/person01.webp" type="image/webp"><img src="img/about/person01.jpg" alt="person"></picture></li>
+									<li class="hotel-info__image"><picture><source srcset="img/about/person02.webp" type="image/webp"><img src="img/about/person02.jpg" alt="person"></picture></li>
+									<li class="hotel-info__image"><picture><source srcset="img/about/person03.webp" type="image/webp"><img src="img/about/person03.jpg" alt="person"></picture></li>
+									<li class="hotel-info__image"><picture><source srcset="img/about/person04.webp" type="image/webp"><img src="img/about/person04.jpg" alt="person"></picture></li>
+									<li class="hotel-info__image"><picture><source srcset="img/about/person05.webp" type="image/webp"><img src="img/about/person05.jpg" alt="person"></picture></li>
+								</ul>
+							</dt>
+							<dd class="hotel-info__text">Peoples successsfully got this
+								dream place</dd>
+						</dl>
+
+					</article>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<nav class="footer__nav">
+						<h4 class="footer__nav-title">Quick link</h4>
+						<ul class="footer__list">
+							<li class="footer__item-list"><a href="" class="footer__link">Home</a></li>
+							<li class="footer__item-list"><a href="" class="footer__link">Services</a></li>
+							<li class="footer__item-list"><a href="" class="footer__link">About us</a></li>
+							<li class="footer__item-list"><a href="" class="footer__link">Contact</a></li>
+						</ul>
+					</nav>
+					<article class="footer__article">
+						<h2 class="footer__title">Get in Touch</h2>
+						<p class="footer__text">Amet minim mollit non deserunt ullamco est
+							sit aliqua dolor do amet sint.</p>
+						<form action="#" class="footer__form" enctype="multipart/form-data">
+							<div class="footer__inputbox">
+								<input type="text" name="email" required placeholder="Enter email">
+							</div>
+							<button type="submit" class="footer__button"><span>Subscribe</span></button>
+						</form>
+					</article>
+					<nav class="footer__nav nav--right">
+						<h4 class="footer__nav-title">Useful</h4>
+						<ul class="footer__list">
+							<li class="footer__item-list"><a href="#" class="footer__link">Privacy policy</a></li>
+							<li class="footer__item-list"><a href="#" class="footer__link">Legal</a></li>
+							<li class="footer__item-list"><a href="#" class="footer__link">FAQ</a></li>
+							<li class="footer__item-list"><a href="#" class="footer__link">Blogs</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer__bottom">
+					<span class="footer__bottom-text">Copywrite goes to - Breakdance.com</span>
+					<ul class="footer__social social">
+						<li class="social__item"><a href="#" class="social__link"><span class="icon-twit"></span></a></li>
+						<li class="social__item"><a href="#" class="social__link"><span class="icon-utube"></span></a></li>
+						<li class="social__item"><a href="#" class="social__link"><span class="icon-face"></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240428211554"></script>
+</body>
+
+</html>
